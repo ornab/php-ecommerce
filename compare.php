@@ -25,7 +25,8 @@
                             if($getPd){
                                 $i = 0; 
                                 while($result = $getPd->fetch_assoc()){
-                                    $i++;
+					
+                                  $i++;
                                  
                             ?>
                             
