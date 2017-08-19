@@ -125,6 +125,27 @@ if(isset($_GET['delpro'])){
                             //echo "cart Empty | plz shop now!";
                         }
                 ?>
+			<?php 
+				
+				    function show_paypal(){
+    
+                      			if(isset($_SESSION['item_quantity']) && $_SESSION['item_quantity'] >= 1 ){    
+    
+    
+						$paypal_button = <<<HEREDOC
+						<input type="image" name="upload"
+						src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_LG.gif"
+						alt="PayPal - The safer, easier way to pay online">
+						HEREDOC;
+
+						echo $paypal_button; 
+
+                                        }
+    
+    				    }
+
+				
+			?>
 					   
 					</div>
 					<div class="shopping">
